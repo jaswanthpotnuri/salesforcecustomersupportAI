@@ -55,4 +55,5 @@
     <textColor>#000000</textColor>
     <title>Support Operations &amp; AI Insights Dashboard</title>
     <titleColor>#000000</titleColor>
+    <titleSize>12</titleSize>
 </Dashboard>

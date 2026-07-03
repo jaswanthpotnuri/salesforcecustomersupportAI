@@ -1,0 +1,17 @@
+{
+  "orgName": "AI Customer Support Org",
+  "edition": "Developer",
+  "features": [
+    "EnableServiceCloud",
+    "StateAndCountryPricing",
+    "EinsteinBuilder"
+  ],
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableLightningPreview": true
+    },
+    "serviceCloudSettings": {
+      "enableOmniChannel": true
+    }
+  }
+}

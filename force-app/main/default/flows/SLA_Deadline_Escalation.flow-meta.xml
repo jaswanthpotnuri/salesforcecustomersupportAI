@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <decisions>
+        <name>Check_If_Still_Open</name>
+        <label>Check If Case Still Open</label>
+        <locationX>374</locationX>
+        <locationY>250</locationY>
+        <defaultConnectorLabel>Closed (No Action)</defaultConnectorLabel>
+        <rules>
+            <name>Still_Open</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.IsClosed</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Escalate_Case</targetReference>
+            </connector>
+            <label>Still Open</label>
+        </rules>
+    </decisions>
+    <recordUpdates>
+        <name>Escalate_Case</name>
+        <label>Escalate Case &amp; Update Status</label>
+        <locationX>506</locationX>
+        <locationY>350</locationY>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Escalated</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>High</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <interviewLabel>SLA Deadline Escalation {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SLA Deadline Escalation</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <object>Case</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <scheduledPaths>
+            <name>SLA_Deadline_Reached</name>
+            <connector>
+                <targetReference>Check_If_Still_Open</targetReference>
+            </connector>
+            <label>SLA Deadline Reached</label>
+            <offsetNumber>0</offsetNumber>
+            <offsetUnit>Minutes</offsetUnit>
+            <recordField>SLA_Deadline__c</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

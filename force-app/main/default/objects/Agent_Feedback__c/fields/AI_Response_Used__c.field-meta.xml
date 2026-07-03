@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AI_Response_Used__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Check if the agent actually used the recommended response or action.</description>
+    <externalId>false</externalId>
+    <label>AI Response Used</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

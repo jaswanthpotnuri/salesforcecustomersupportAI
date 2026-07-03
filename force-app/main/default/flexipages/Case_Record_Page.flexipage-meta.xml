@@ -44,10 +44,6 @@
                     <name>flowName</name>
                     <value>Capture_Agent_Feedback</value>
                 </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>flowInputVariables</name>
-                    <value>[{&quot;name&quot;:&quot;recordId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;{!Record.Id}&quot;}]</value>
-                </componentInstanceProperties>
                 <componentName>flowruntime:interview</componentName>
                 <identifier>flowruntime_interview</identifier>
             </componentInstance>

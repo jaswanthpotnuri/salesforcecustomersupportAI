@@ -28,32 +28,18 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <field>Agent_Feedback__c.Case__c</field>
+        <field>Case.Agent_Feedback_Rating__c</field>
         <editable>true</editable>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <field>Agent_Feedback__c.Rating__c</field>
+        <field>Case.Agent_Feedback_Comments__c</field>
         <editable>true</editable>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <field>Agent_Feedback__c.Comments__c</field>
+        <field>Case.AI_Response_Used__c</field>
         <editable>true</editable>
         <readable>true</readable>
     </fieldPermissions>
-    <fieldPermissions>
-        <field>Agent_Feedback__c.AI_Response_Used__c</field>
-        <editable>true</editable>
-        <readable>true</readable>
-    </fieldPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>Agent_Feedback__c</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
 </PermissionSet>

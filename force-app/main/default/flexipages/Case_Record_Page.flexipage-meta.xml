@@ -49,15 +49,6 @@
                 <componentName>flowruntime:interview</componentName>
             </componentInstance>
         </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>strategyName</name>
-                    <value>CaseNextBestActions</value>
-                </componentInstanceProperties>
-                <componentName>sgi:nextBestAction</componentName>
-            </componentInstance>
-        </itemInstances>
         <name>sidebar</name>
         <type>Region</type>
     </flexiPageRegions>

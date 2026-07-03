@@ -9,7 +9,7 @@
             <columnIndex>0</columnIndex>
             <dashboardComponent>
                 <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-                <componentType>FlexTable</componentType>
+                <componentType>Donut</componentType>
                 <report>SupportAIReports/SLA_Compliance</report>
                 <title>SLA Compliance Overview</title>
             </dashboardComponent>
@@ -45,6 +45,6 @@
     </dashboardGridLayout>
     <dashboardType>SpecifiedUser</dashboardType>
     <isGridLayout>true</isGridLayout>
-    <runningUser>potnuri.jaswanth@clever-raman.com</runningUser>
+    <runningUser>potnuri.jaswanth0106@gmail.com</runningUser>
     <title>Support Operations &amp; AI Insights Dashboard</title>
 </Dashboard>

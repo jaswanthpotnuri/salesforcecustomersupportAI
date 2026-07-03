@@ -62,30 +62,32 @@
         </value>
     </processMetadataValues>
     <processType>Flow</processType>
-    <recordCreates>
-        <name>Create_Feedback_Record</name>
-        <label>Create Feedback Record</label>
+    <recordUpdates>
+        <name>Update_Case_Feedback</name>
+        <label>Update Case Feedback Fields</label>
         <locationX>176</locationX>
         <locationY>250</locationY>
         <connector>
             <targetReference>Success_Screen</targetReference>
         </connector>
-        <inputAssignments>
-            <field>Case__c</field>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
             <value>
                 <elementReference>recordId</elementReference>
             </value>
-        </inputAssignments>
+        </filters>
         <inputAssignments>
-            <field>Comments__c</field>
+            <field>Agent_Feedback_Rating__c</field>
             <value>
-                <elementReference>Comments</elementReference>
+                <elementReference>Rating</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>Rating__c</field>
+            <field>Agent_Feedback_Comments__c</field>
             <value>
-                <elementReference>Rating</elementReference>
+                <elementReference>Comments</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -94,8 +96,8 @@
                 <elementReference>AI_Response_Used</elementReference>
             </value>
         </inputAssignments>
-        <object>Agent_Feedback__c</object>
-    </recordCreates>
+        <object>Case</object>
+    </recordUpdates>
     <screens>
         <name>Feedback_Form</name>
         <label>Feedback Form</label>
@@ -105,7 +107,7 @@
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
         <connector>
-            <targetReference>Create_Feedback_Record</targetReference>
+            <targetReference>Update_Case_Feedback</targetReference>
         </connector>
         <fields>
             <name>Rating</name>

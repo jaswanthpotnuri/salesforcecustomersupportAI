@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
-        <field>CUST_NAME</field>
+        <field>CASE_NUMBER</field>
     </columns>
     <columns>
-        <field>Agent_Feedback__c.Case__c</field>
+        <field>SUBJECT</field>
     </columns>
     <columns>
-        <field>Agent_Feedback__c.AI_Response_Used__c</field>
+        <field>Case.AI_Response_Used__c</field>
     </columns>
     <columns>
-        <field>Agent_Feedback__c.Comments__c</field>
+        <field>Case.Agent_Feedback_Comments__c</field>
     </columns>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Agent_Feedback__c.Rating__c</field>
+        <field>Case.Agent_Feedback_Rating__c</field>
         <sortOrder>Desc</sortOrder>
     </groupingsDown>
     <name>Agent Feedback Report</name>
-    <reportType>CustomEntity$Agent_Feedback__c</reportType>
+    <reportType>CaseList</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <timeFrameFilter>
-        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>

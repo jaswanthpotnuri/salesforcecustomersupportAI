@@ -13,7 +13,6 @@
                 <componentType>Donut</componentType>
                 <report>SupportAIReports/SLA_Compliance</report>
                 <sortBy>RowLabelAscending</sortBy>
-                <textColor>#000000</textColor>
                 <title>SLA Compliance Overview</title>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
@@ -28,7 +27,6 @@
                 <componentType>BarGrouped</componentType>
                 <report>SupportAIReports/AI_Classification_Accuracy</report>
                 <sortBy>RowLabelAscending</sortBy>
-                <textColor>#000000</textColor>
                 <title>AI Classification by Category</title>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
@@ -43,7 +41,6 @@
                 <componentType>Donut</componentType>
                 <report>SupportAIReports/Agent_Feedback</report>
                 <sortBy>RowLabelAscending</sortBy>
-                <textColor>#000000</textColor>
                 <title>Agent Rating Feedback Distribution</title>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
@@ -55,5 +52,6 @@
     <dashboardType>SpecifiedUser</dashboardType>
     <isGridLayout>true</isGridLayout>
     <runningUser>potnuri.jaswanth0106@gmail.com</runningUser>
+    <textColor>#000000</textColor>
     <title>Support Operations &amp; AI Insights Dashboard</title>
 </Dashboard>

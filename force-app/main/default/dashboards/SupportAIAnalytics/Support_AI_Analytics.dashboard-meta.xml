@@ -11,6 +11,7 @@
                 <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
                 <componentType>Donut</componentType>
                 <report>SupportAIReports/SLA_Compliance</report>
+                <sortBy>RowLabelAscending</sortBy>
                 <title>SLA Compliance Overview</title>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
@@ -23,6 +24,7 @@
                 <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
                 <componentType>BarGrouped</componentType>
                 <report>SupportAIReports/AI_Classification_Accuracy</report>
+                <sortBy>RowLabelAscending</sortBy>
                 <title>AI Classification by Category</title>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
@@ -35,6 +37,7 @@
                 <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
                 <componentType>Donut</componentType>
                 <report>SupportAIReports/Agent_Feedback</report>
+                <sortBy>RowLabelAscending</sortBy>
                 <title>Agent Rating Feedback Distribution</title>
             </dashboardComponent>
             <rowIndex>0</rowIndex>

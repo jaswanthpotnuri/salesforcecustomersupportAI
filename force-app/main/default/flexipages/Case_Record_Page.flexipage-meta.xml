@@ -17,6 +17,7 @@
                     <value>false</value>
                 </componentInstanceProperties>
                 <componentName>force:highlightsPanel</componentName>
+                <identifier>highlightsPanel</identifier>
             </componentInstance>
         </itemInstances>
         <name>header</name>
@@ -26,6 +27,7 @@
         <itemInstances>
             <componentInstance>
                 <componentName>force:detailPanel</componentName>
+                <identifier>detailPanel</identifier>
             </componentInstance>
         </itemInstances>
         <name>main</name>
@@ -47,6 +49,7 @@
                     <value>[{&quot;name&quot;:&quot;recordId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;{!Record.Id}&quot;}]</value>
                 </componentInstanceProperties>
                 <componentName>flowruntime:interview</componentName>
+                <identifier>flowruntime_interview</identifier>
             </componentInstance>
         </itemInstances>
         <name>sidebar</name>

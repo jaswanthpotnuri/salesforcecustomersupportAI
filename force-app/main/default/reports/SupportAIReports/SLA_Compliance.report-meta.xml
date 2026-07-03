@@ -10,7 +10,7 @@
         <field>STATUS</field>
     </columns>
     <columns>
-        <field>SLA_Deadline__c</field>
+        <field>Case.SLA_Deadline__c</field>
     </columns>
     <format>Summary</format>
     <groupingsDown>

@@ -12,10 +12,6 @@
                     <name>enableActionsConfiguration</name>
                     <value>false</value>
                 </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>enableActionsInNativeUserInterfaceOnMobile</name>
-                    <value>false</value>
-                </componentInstanceProperties>
                 <componentName>force:highlightsPanel</componentName>
                 <identifier>highlightsPanel</identifier>
             </componentInstance>

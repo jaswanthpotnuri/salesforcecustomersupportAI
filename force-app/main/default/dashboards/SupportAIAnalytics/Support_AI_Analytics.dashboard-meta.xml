@@ -14,6 +14,9 @@
                 <report>SupportAIReports/SLA_Compliance</report>
                 <sortBy>RowLabelAscending</sortBy>
                 <title>SLA Compliance Overview</title>
+                <titleColor>#000000</titleColor>
+                <titleSize>12</titleSize>
+                <textColor>#000000</textColor>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
             <rowSpan>4</rowSpan>
@@ -28,6 +31,9 @@
                 <report>SupportAIReports/AI_Classification_Accuracy</report>
                 <sortBy>RowLabelAscending</sortBy>
                 <title>AI Classification by Category</title>
+                <titleColor>#000000</titleColor>
+                <titleSize>12</titleSize>
+                <textColor>#000000</textColor>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
             <rowSpan>4</rowSpan>
@@ -42,6 +48,9 @@
                 <report>SupportAIReports/Agent_Feedback</report>
                 <sortBy>RowLabelAscending</sortBy>
                 <title>Agent Rating Feedback Distribution</title>
+                <titleColor>#000000</titleColor>
+                <titleSize>12</titleSize>
+                <textColor>#000000</textColor>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
             <rowSpan>4</rowSpan>
